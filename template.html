@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Cep }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #efefef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #3b4a54;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .details {
+            margin-top: 10px;
+        }
+        .details p {
+            margin: 5px 0;
+            color: #f0f0f0;
+        }
+
+        h1 {
+            padding: 0.5rem;
+            color: #f0f0f0;
+            text-align: center;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #999;
+        }
+
+        footer a {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>lugar estranho 👇🏻</h1>
+    <div class="details">
+        <p><strong>CEP:</strong> {{ .Cep }}</p>
+        <p><strong>Logradouro:</strong> {{ .Logradouro }}</p>
+        <p><strong>Complemento:</strong> {{ .Complemento }}</p>
+        <p><strong>Bairro:</strong> {{ .Bairro }}</p>
+        <p><strong>Localidade:</strong> {{ .Localidade }}</p>
+        <p><strong>UF:</strong> {{ .Uf }}</p>
+        <p><strong>IBGE:</strong> {{ .Ibge }}</p>
+        <p><strong>GIA:</strong> {{ .Gia }}</p>
+        <p><strong>DDD:</strong> {{ .Ddd }}</p>
+        <p><strong>SIAFI:</strong> {{ .Siafi }}</p>
+    </div>
+    <footer>
+        made with 🌶️️ by <a href="https://github.com/pmenta">pmenta</a>
+    </footer>
+</div>
+</body>
+</html>

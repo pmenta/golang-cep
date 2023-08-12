@@ -1,0 +1,6 @@
+### Ping
+GET http://localhost:8080/ping
+
+### Get cep
+GET http://localhost:8080/cep?cep=35040-494
+
